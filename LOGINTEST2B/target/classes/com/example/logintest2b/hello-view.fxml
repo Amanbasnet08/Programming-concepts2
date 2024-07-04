@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logintest2b.HelloController">
+   <center>
+      <Pane prefHeight="357.0" prefWidth="527.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username" layoutX="205.0" layoutY="153.0" prefHeight="25.0" prefWidth="265.0" promptText="Username" />
+            <Text fill="RED" layoutX="183.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO THE LOGIN PAGE BY MR.AMAN BASNET" textAlignment="CENTER" wrappingWidth="248.55902099609375">
+               <font>
+                  <Font name="Kristen ITC" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <PasswordField fx:id="password" layoutX="205.0" layoutY="215.0" prefHeight="25.0" prefWidth="265.0" promptText="Password" />
+            <Button fx:id="button" layoutX="262.0" layoutY="312.0" mnemonicParsing="false" onAction="#userLogIn" text="Login" textFill="#337945" />
+            <Text layoutX="106.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username   -&gt;" />
+            <Text layoutX="110.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password   -&gt;" />
+            <Label fx:id="wrongLogin" layoutX="197.0" layoutY="111.0" prefHeight="17.0" prefWidth="191.0" textAlignment="CENTER" textFill="#00ff1a">
+               <font>
+                  <Font name="Algerian" size="12.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
