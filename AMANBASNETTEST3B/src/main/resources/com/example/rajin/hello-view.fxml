@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.Label?>
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rajin.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pizza Ordering System" />
+        <Label fx:id="welcomeText" />
+        <TextField fx:id="sid" promptText="id" />
+        <TextField fx:id="scustomerName" promptText="Customer Name" />
+        <TextField fx:id="smobileNumber" promptText="Mobile Number" />
+        <TextField fx:id="spizzaSize" promptText="Pizza Size (e.g., Large, Small, Medium)" />
+        <TextField fx:id="snumtoppings" promptText="Number of toppings" />
+        <Button mnemonicParsing="false" onAction="#InsertData" text="Insert" />
+        <Button mnemonicParsing="false" onAction="#UpdateData" text="Update" />
+        <Button mnemonicParsing="false" onAction="#DeleteData" text="Delete" />
+        <Button mnemonicParsing="false" onAction="#LoadData" text="LoadData" />
+        <Button mnemonicParsing="false" onAction="#FetchData" text="Fetch" />
+        <Button mnemonicParsing="false" onAction="#CalculateTotal" text="Total" />
+        <TableView fx:id="pizzatable" prefHeight="200.0" prefWidth="350.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="70.0" text="id" />
+                <TableColumn fx:id="customername" prefWidth="70.0" text="Customername" />
+                <TableColumn fx:id="mobilenumber" prefWidth="70.0" text="mobilenumber" />
+                <TableColumn fx:id="pizzasize" prefWidth="70.0" text="pizzasize" />
+                <TableColumn fx:id="numberoftoppings" prefWidth="90.0" text="numberoftoppings" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>
